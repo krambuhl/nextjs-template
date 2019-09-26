@@ -1,0 +1,5 @@
+.extraSmall > * + * { margin-top: 0.2rem; }
+.small > * + * { margin-top: 0.5rem; }
+.medium > * + * { margin-top: 1rem; }
+.large > * + * { margin-top: 2rem; }
+.extraLarge > * + * { margin-top: 4rem; }

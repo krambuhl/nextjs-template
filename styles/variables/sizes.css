@@ -1,0 +1,10 @@
+:root {
+  --padding: 1rem;
+  --padding-responsive: var(--padding);
+}
+
+@media (--medium) {
+  :root {
+    --padding-responsive: calc(var(--padding) * 2);
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "../"
+        ],
+        "alias": {
+          "@components": "./components",
+          "@utils": "./components/01-utils",
+          "@atoms": "./components/02-atoms",
+          "@molecules": "./components/03-molecules",
+          "@organisms": "./components/04-organisms",
+          "@templates": "./components/05-templates",
+          "@contexts": "./contexts",
+          "@graphql": "./graphql",
+          "@hooks": "./hooks",
+          "@pages": "./pages",
+          "@static": "./static",
+          "@styles": "./styles",
+          "@decorators": "./.storybook/decorators"
+        }
+      }
+    ]
+  ]
+}

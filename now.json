@@ -1,0 +1,26 @@
+{
+  "name": "graphql-next-storybook",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "dist" }
+    },
+    { "src": "graphql/server.js", "use": "@now/node" },
+    { "src": "next.config.js", "use": "@now/next" }
+  ],
+  "routes": [
+    { "src": "/styleguide", "dest": "/styleguide/?slug=404" },
+    { "src": "/graphql", "dest": "graphql/server.js" },
+    { "src": "/graphql-flush", "dest": "graphql/server.js" },
+    {
+      "src": "^/service-worker.js$",
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
+    }
+  ]
+}

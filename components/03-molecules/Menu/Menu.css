@@ -1,0 +1,17 @@
+.root { /* empty */ }
+
+.list {
+  display: flex;
+}
+
+.item {
+  & + & {
+    margin-left: 0.5em;
+  }
+}
+
+.link {
+  color: var(--color-black);
+  display: block;
+  position: relative;
+}

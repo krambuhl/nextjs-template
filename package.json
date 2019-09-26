@@ -1,0 +1,75 @@
+{
+  "name": "graphql-next-storybook",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "^10"
+  },
+  "scripts": {
+    "dev": "npm run dev:graphql & npm run dev:next & npm run dev:storybook",
+    "dev:next": "next dev",
+    "dev:graphql": "nodemon ./graphql/server.js",
+    "dev:storybook": "start-storybook -s ./ -p 3002",
+    "build": "next build & npm run build:storybook",
+    "build:next": "next build",
+    "build:storybook": "build-storybook -o dist/styleguide --quiet --loglevel warn",
+    "now-build": "npm run build:storybook",
+    "deploy": "npm run build && now"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueJackStudio/SMITH.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlueJackStudio/SMITH/issues"
+  },
+  "homepage": "https://github.com/BlueJackStudio/SMITH#readme",
+  "devDependencies": {
+    "@svgr/webpack": "^4.3.0",
+    "@zeit/next-css": "^1.0.1",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-react": "^7.13.0",
+    "next-compose-plugins": "^2.2.0",
+    "next-offline": "^4.0.2",
+    "nodemon": "^1.19.1",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-import-alias-resolver": "^0.1.1",
+    "postcss-nested": "^4.1.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-reporter": "^6.0.1",
+    "postcss-responsive-type": "^1.0.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^3.0.0"
+  },
+  "dependencies": {
+    "@storybook/addon-a11y": "^5.1.11",
+    "@storybook/addon-viewport": "^5.1.11",
+    "@storybook/addons": "^5.1.11",
+    "@storybook/react": "^5.1.11",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "classnames": "^2.2.6",
+    "cors": "^2.8.5",
+    "cross-fetch": "^3.0.4",
+    "dataloader": "^1.4.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.4.2",
+    "graphql-react": "^8.2.0",
+    "html-to-react": "^1.4.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.0.0",
+    "next-graphql-react": "^3.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-use": "^9.5.0",
+    "reset-css": "^4.0.1",
+    "shopify-buy": "^1.2.0",
+    "webpack": "^4.35.3"
+  }
+}
