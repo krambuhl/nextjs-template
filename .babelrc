@@ -17,7 +17,6 @@
           "@organisms": "./components/04-organisms",
           "@templates": "./components/05-templates",
           "@contexts": "./contexts",
-          "@graphql": "./graphql",
           "@hooks": "./hooks",
           "@pages": "./pages",
           "@static": "./static",
