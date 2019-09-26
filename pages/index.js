@@ -5,5 +5,3 @@ export default function HomeIndex () {
     <Home />
   )
 }
-
-HomeIndex.graphQuery = null

@@ -1,17 +1,10 @@
 {
-  "name": "graphql-next-storybook",
+  "name": "nextjs-template",
   "version": 2,
   "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": { "distDir": "dist" }
-    },
-    { "src": "graphql/server.js", "use": "@now/node" },
     { "src": "next.config.js", "use": "@now/next" }
   ],
   "routes": [
-    { "src": "/styleguide", "dest": "/styleguide/?slug=404" },
     { "src": "/graphql", "dest": "graphql/server.js" },
     { "src": "/graphql-flush", "dest": "graphql/server.js" },
     {

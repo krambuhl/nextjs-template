@@ -1,4 +1,4 @@
-# graphql-next-storybook
+# nextjs-template
 
 ## Getting Started
 
